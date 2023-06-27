@@ -205,7 +205,7 @@ void Slider::_notification(int p_what) {
 			}
 
 			Ref<StyleBox> grabber_area;
-			if (highlighted) {
+			if (editable && highlighted) {
 				grabber_area = theme_cache.grabber_area_hl_style;
 			} else {
 				grabber_area = theme_cache.grabber_area_style;
